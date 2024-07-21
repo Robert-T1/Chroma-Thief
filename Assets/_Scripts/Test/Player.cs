@@ -21,7 +21,6 @@ namespace TestCode
 
             if (health <= 0)
             {
-                // died
                 transform.position = respawnPoint.position;
                 health = maxHealth;
             }

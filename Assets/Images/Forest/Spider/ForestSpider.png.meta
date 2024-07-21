@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 9635a9e9759f64848a61b0632cbcba34
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2234031083225375301
+    second: ForestSpider_0
+  - first:
+      213: 6357174441695844845
+    second: ForestSpider_1
+  - first:
+      213: 4767833455155661405
+    second: ForestSpider_2
+  - first:
+      213: -6665179261815927273
+    second: ForestSpider_3
+  - first:
+      213: -7992407055644158557
+    second: ForestSpider_4
+  - first:
+      213: -3192788871171633493
+    second: ForestSpider_5
+  - first:
+      213: 7750304363034862264
+    second: ForestSpider_6
+  - first:
+      213: 5272761362760652249
+    second: ForestSpider_7
+  - first:
+      213: 2197250144302173949
+    second: ForestSpider_8
+  - first:
+      213: 7371853228947383933
+    second: ForestSpider_9
+  - first:
+      213: 8363147227379377647
+    second: ForestSpider_10
+  - first:
+      213: 7322940337827642982
+    second: ForestSpider_11
+  - first:
+      213: -3131225639377171235
+    second: ForestSpider_12
+  - first:
+      213: -2724394531420656240
+    second: ForestSpider_13
+  - first:
+      213: -8366292397676144663
+    second: ForestSpider_14
+  - first:
+      213: 4314203925990239027
+    second: ForestSpider_15
+  - first:
+      213: 3174412592796701204
+    second: ForestSpider_16
+  - first:
+      213: 8370155888822204659
+    second: ForestSpider_17
+  - first:
+      213: 3132928631706803396
+    second: ForestSpider_18
+  - first:
+      213: -6250085884620385643
+    second: ForestSpider_19
+  - first:
+      213: -4106180932935893079
+    second: ForestSpider_20
+  - first:
+      213: 5632253260113666796
+    second: ForestSpider_21
+  - first:
+      213: 1045263830400791176
+    second: ForestSpider_22
+  - first:
+      213: -6137223370616763867
+    second: ForestSpider_23
+  - first:
+      213: -6656316815988493424
+    second: ForestSpider_24
+  - first:
+      213: 2088867558843505189
+    second: ForestSpider_25
+  - first:
+      213: 6058729897556072225
+    second: ForestSpider_26
+  - first:
+      213: 3247570016036137792
+    second: ForestSpider_27
+  - first:
+      213: -100285073482706032
+    second: ForestSpider_28
+  - first:
+      213: -5960058051530997736
+    second: ForestSpider_29
+  - first:
+      213: 2441947205245681675
+    second: ForestSpider_30
+  - first:
+      213: 7266681554943403129
+    second: ForestSpider_31
+  - first:
+      213: -8883536230913667872
+    second: ForestSpider_32
+  - first:
+      213: -2508831605275598112
+    second: ForestSpider_33
+  - first:
+      213: -143842399533923466
+    second: ForestSpider_34
+  - first:
+      213: -4251821198566652109
+    second: ForestSpider_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestSpider_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 207
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54264dc0f6fd00f10800000000000000
+      internalID: 2234031083225375301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 207
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de919741978393850800000000000000
+      internalID: 6357174441695844845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 207
+        width: 38
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ac6c2344fba2240800000000000000
+      internalID: 4767833455155661405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 207
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e492766c68083a0800000000000000
+      internalID: -6665179261815927273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 143
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a51104e024451190800000000000000
+      internalID: -7992407055644158557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 143
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae8ef2107fe0b3d0800000000000000
+      internalID: -3192788871171633493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 143
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b26adb51cc9e8b60800000000000000
+      internalID: 7750304363034862264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 143
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5d0cce58c9c2940800000000000000
+      internalID: 5272761362760652249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 143
+        width: 37
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe8ecd5d533e7e10800000000000000
+      internalID: 2197250144302173949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_9
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 143
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76a9b734751e4660800000000000000
+      internalID: 7371853228947383933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 143
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5ad3ce71edf0470800000000000000
+      internalID: 8363147227379377647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 143
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e789b407f40a560800000000000000
+      internalID: 7322940337827642982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_12
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 143
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc0455fed6ab84d0800000000000000
+      internalID: -3131225639377171235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_13
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 143
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09da7aeab91013ad0800000000000000
+      internalID: -2724394531420656240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 79
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7567d0465f4eb80800000000000000
+      internalID: -8366292397676144663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_15
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 79
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b6e31fc912fdb30800000000000000
+      internalID: 4314203925990239027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 79
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4129c243f67cd0c20800000000000000
+      internalID: 3174412592796701204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_17
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 76
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f834e31f64c82470800000000000000
+      internalID: 8370155888822204659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_18
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 79
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccd887ddf56a7b20800000000000000
+      internalID: 3132928631706803396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_19
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 79
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592d487900c3349a0800000000000000
+      internalID: -6250085884620385643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 92
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afbfdc623ae307c0800000000000000
+      internalID: -4106180932935893079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_21
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 79
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce26c16cf78c92e40800000000000000
+      internalID: 5632253260113666796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_22
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 15
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8827a9b6ae5818e00800000000000000
+      internalID: 1045263830400791176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 15
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a892f5cd334daa0800000000000000
+      internalID: -6137223370616763867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_24
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 15
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093fb8e5f1300a3a0800000000000000
+      internalID: -6656316815988493424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 15
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a54bb3af52dfc10800000000000000
+      internalID: 2088867558843505189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_26
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 15
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1275ed5cdbee41450800000000000000
+      internalID: 6058729897556072225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_27
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 27
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b2b0529bfa11d20800000000000000
+      internalID: 3247570016036137792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_28
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 20
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0931acac147bb9ef0800000000000000
+      internalID: -100285073482706032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_29
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810c9c5a7ce994da0800000000000000
+      internalID: -5960058051530997736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_30
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 15
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b004de09b0a83e120800000000000000
+      internalID: 2441947205245681675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_31
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 15
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974e84aaf5078d460800000000000000
+      internalID: 7266681554943403129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 15
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec041f6dd657b480800000000000000
+      internalID: -8883536230913667872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_33
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2664682f6de2dd0800000000000000
+      internalID: -2508831605275598112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_34
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 15
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67304288918f00ef0800000000000000
+      internalID: -143842399533923466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestSpider_35
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 15
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33785f2a52f7ef4c0800000000000000
+      internalID: -4251821198566652109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ForestSpider_0: 2234031083225375301
+      ForestSpider_1: 6357174441695844845
+      ForestSpider_10: 8363147227379377647
+      ForestSpider_11: 7322940337827642982
+      ForestSpider_12: -3131225639377171235
+      ForestSpider_13: -2724394531420656240
+      ForestSpider_14: -8366292397676144663
+      ForestSpider_15: 4314203925990239027
+      ForestSpider_16: 3174412592796701204
+      ForestSpider_17: 8370155888822204659
+      ForestSpider_18: 3132928631706803396
+      ForestSpider_19: -6250085884620385643
+      ForestSpider_2: 4767833455155661405
+      ForestSpider_20: -4106180932935893079
+      ForestSpider_21: 5632253260113666796
+      ForestSpider_22: 1045263830400791176
+      ForestSpider_23: -6137223370616763867
+      ForestSpider_24: -6656316815988493424
+      ForestSpider_25: 2088867558843505189
+      ForestSpider_26: 6058729897556072225
+      ForestSpider_27: 3247570016036137792
+      ForestSpider_28: -100285073482706032
+      ForestSpider_29: -5960058051530997736
+      ForestSpider_3: -6665179261815927273
+      ForestSpider_30: 2441947205245681675
+      ForestSpider_31: 7266681554943403129
+      ForestSpider_32: -8883536230913667872
+      ForestSpider_33: -2508831605275598112
+      ForestSpider_34: -143842399533923466
+      ForestSpider_35: -4251821198566652109
+      ForestSpider_4: -7992407055644158557
+      ForestSpider_5: -3192788871171633493
+      ForestSpider_6: 7750304363034862264
+      ForestSpider_7: 5272761362760652249
+      ForestSpider_8: 2197250144302173949
+      ForestSpider_9: 7371853228947383933
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
