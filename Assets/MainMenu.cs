@@ -9,7 +9,10 @@ public class MainMenu : MonoBehaviour
     public Button startButton;
     public Button settingsButton;
     public Button creditsButton;
+    public Button creditsCloseButton;
     public Button exitButton;
+
+    public GameObject creditsPanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +22,14 @@ public class MainMenu : MonoBehaviour
             startButton.onClick.AddListener(LaunchGame);
         }
         exitButton.onClick.AddListener(Exit);
+        creditsButton.onClick.AddListener(() =>
+        {
+            creditsPanel.SetActive(true);
+        });
+        creditsCloseButton.onClick.AddListener(() =>
+        {
+            creditsPanel.SetActive(false);
+        });
     }
 
     void LaunchGame()
