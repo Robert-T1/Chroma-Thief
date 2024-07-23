@@ -9,6 +9,10 @@ public class ActiveOnColor : ColorSubscriber
 
     private void Start()
     {
+        if(gameObjectToSet == null)
+        {
+            gameObjectToSet = this.gameObject;
+        }
         if (ColorManager.Instance != null)
         {
             ColorManager.Instance.colorChange += OnColorChange;

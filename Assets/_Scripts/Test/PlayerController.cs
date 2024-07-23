@@ -1,12 +1,11 @@
 using System;
 using UnityEngine;
 
-namespace TestCode
-{
 
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour, IPlayerController
     {
+        [SerializeField] private PlayerAnimationController animateController;
         [SerializeField] private ScriptableStats _stats;
         private Rigidbody2D _rb;
         private CapsuleCollider2D _col;
@@ -57,6 +56,16 @@ namespace TestCode
             {
                 _jumpToConsume = true;
                 _timeJumpWasPressed = _time;
+            }
+
+            if(_frameInput.Move.x != 0) 
+            {
+                animateController.MovingState(true);
+                animateController.FlipPlayerSprite(_frameInput.Move.x > 0 ? false : true);
+            }
+            else
+            {
+                animateController.MovingState(false);
             }
         }
 
@@ -177,6 +186,11 @@ namespace TestCode
             }
         }
 
+        public void ResetVelocity()
+        {
+            _frameVelocity = Vector2.zero;
+        }
+
         #endregion
 
         private void ApplyMovement() => _rb.velocity = _frameVelocity;
@@ -203,4 +217,3 @@ namespace TestCode
         public event Action Jumped;
         public Vector2 FrameInput { get; }
     }
-}
