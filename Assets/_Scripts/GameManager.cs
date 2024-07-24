@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public Player player;
+    public GuiManager gui;
+    public bool isPaused;
 
     private void Awake()
     {
@@ -21,5 +24,10 @@ public class GameManager : MonoBehaviour
             Destroy(Instance);
         }
         DontDestroyOnLoad(gameObject);
+    }
+
+    void OnApplicationPause(bool pauseStatus)
+    {
+        isPaused = pauseStatus;
     }
 }
