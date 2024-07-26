@@ -12,15 +12,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private Button mainMenuButton;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         resumeButton.onClick.AddListener(() => gui.TogglePauseMenu());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
