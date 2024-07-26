@@ -1,15 +1,26 @@
 using UnityEngine;
-namespace TestCode
-{
-    public class DamageCollider : MonoBehaviour
-    {
-        [SerializeField] private int damageAmount = 50;
 
-        private void OnCollisionEnter2D(Collision2D collision)
+public class DamageCollider : MonoBehaviour
+{
+    [SerializeField] private int damageAmount = 50;
+    [SerializeField] private bool hasknockBack = true;
+    [SerializeField] private float knockBack = 2.0f;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Health>(out Health health))
         {
-            if (collision.gameObject.CompareTag("Player"))
+            health.Damage(damageAmount);
+            if(hasknockBack)
             {
-                collision.gameObject.GetComponent<Player>().TakeDamage(damageAmount);
+                if(collision.gameObject.CompareTag("Player"))
+                {
+                    PlayerController playerController = collision.gameObject.GetComponent<PlayerController>();
+                    Vector2 direction = (transform.position - collision.transform.position).normalized;
+                    Vector2 knockback = direction.normalized * knockBack;
+
+                    playerController.SetVelocity(-knockback);
+                }
             }
         }
     }

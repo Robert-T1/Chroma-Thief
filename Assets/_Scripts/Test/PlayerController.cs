@@ -1,10 +1,13 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour, IPlayerController
     {
+        [SerializeField] private float attackXPos_Left, attackXPos_Right;
+        [SerializeField] private GameObject attackDamageBox;
         [SerializeField] private PlayerAnimationController animateController;
         [SerializeField] private ScriptableStats _stats;
         private Rigidbody2D _rb;
@@ -12,6 +15,7 @@ using UnityEngine;
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
+        private bool isAttacking;
 
         #region Interface
 
@@ -43,8 +47,9 @@ using UnityEngine;
             {
                 JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
                 JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
-                Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
-            };
+                Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")),
+                Attack = Input.GetMouseButtonDown(0),
+             };
 
             if (_stats.SnapInput)
             {
@@ -67,6 +72,11 @@ using UnityEngine;
             {
                 animateController.MovingState(false);
             }
+
+            if(_frameInput.Attack && !isAttacking)
+            {
+                StartCoroutine(HandleAttack());
+            }
         }
 
         private void FixedUpdate()
@@ -79,6 +89,20 @@ using UnityEngine;
 
             ApplyMovement();
         }
+
+    private IEnumerator HandleAttack()
+    {
+        isAttacking = true;
+        animateController.AttackState(true);
+        attackDamageBox.SetActive(true);
+        attackDamageBox.transform.localPosition = new Vector2(_frameInput.Move.x < 0 ? attackXPos_Left : attackXPos_Right, attackDamageBox.transform.localPosition.y);
+
+        yield return new WaitForSeconds(animateController.GetAnimationClipLength("attacking") + 0.25f);
+
+        attackDamageBox.SetActive(false);
+        animateController.AttackState(false);
+        isAttacking = false;
+    }
 
         #region Collisions
 
@@ -191,6 +215,11 @@ using UnityEngine;
             _frameVelocity = Vector2.zero;
         }
 
+        public void SetVelocity(Vector2 direction)
+        {
+            _frameVelocity = direction;
+        }
+
         #endregion
 
         private void ApplyMovement() => _rb.velocity = _frameVelocity;
@@ -205,6 +234,7 @@ using UnityEngine;
 
     public struct FrameInput
     {
+        public bool Attack;
         public bool JumpDown;
         public bool JumpHeld;
         public Vector2 Move;

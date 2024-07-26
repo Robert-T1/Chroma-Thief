@@ -1,5 +1,4 @@
 using System.Collections;
-using TestCode;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -16,12 +15,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackDuration = 0.5f;
     [SerializeField] private GameObject attackBox;
     [SerializeField] private Vector2 attackBoxLeft, attackBoxRight;
+    [SerializeField] private Health health;
 
     private float defaultSpeed;
-    private int health;
     private bool isFollowingPath = true;
     private bool isBacktracking = false;
     private bool isAttacking = false;
+    private bool isMoving = true;
     private int currentTrackIndex = 0;
     private Transform nextPoint;
     private Vector2 lastPos;
@@ -31,18 +31,24 @@ public class EnemyAI : MonoBehaviour
     {
         defaultSpeed = speed;
         transform.position = basePath[currentTrackIndex].position;
-        health = maxHealth;
+        health.onDeath += Death;
+
         nextPoint = GetNextPathPoint();
     }
 
     private void Update()
     {
+        if(!isMoving)
+        {
+            return;
+        }
+
         if(isFollowingPath)
         {
             speed = defaultSpeed;
             transform.position = Vector2.MoveTowards(transform.position, nextPoint.position, speed * Time.deltaTime);
 
-            if (Vector2.Distance(transform.position, nextPoint.position) <= 0.1f)
+            if (Vector2.Distance(transform.position, nextPoint.position) <= 0.5f)
             {
                 nextPoint = GetNextPathPoint();
             }
@@ -65,9 +71,18 @@ public class EnemyAI : MonoBehaviour
         CheckForPlayer();
     }
 
-    public void DamageEnemy(int damage)
+    private void Death()
     {
+        isMoving = false;
+        animator.SetBool("dead", true);
+        StartCoroutine(WaitBeforeDestroy(3));
+        health.onDeath -= Death;
+    }
 
+    private IEnumerator WaitBeforeDestroy(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Destroy(gameObject);
     }
 
     private IEnumerator Attack()
