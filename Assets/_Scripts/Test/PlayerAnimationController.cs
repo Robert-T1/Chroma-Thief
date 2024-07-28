@@ -28,6 +28,11 @@ public class PlayerAnimationController : MonoBehaviour
     {
         spriteRenderer.flipX = flip;
     }
+    public bool GetPlayerSpriteFlipState()
+    {
+       return spriteRenderer.flipX;
+    }
+
 
     public float GetAnimationClipLength(string clipName)
     {

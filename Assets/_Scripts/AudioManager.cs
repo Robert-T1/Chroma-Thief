@@ -1,16 +1,36 @@
 using UnityEngine;
+using FMODUnity;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static AudioManager Instance { get; private set; }
+    [SerializeField] private EventReference music;
+
+    private void Awake()
     {
-        
+        CreateSingleton();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        StartMusic(music);
+    }
+
+    private void CreateSingleton()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(Instance);
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void StartMusic(EventReference sound)
+    {
+        RuntimeManager.PlayOneShot(sound);
     }
 }

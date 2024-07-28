@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraController : MonoBehaviour
 {
@@ -6,6 +8,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private Vector3 locationOffset;
+    [SerializeField] private RawImage fade;
     private float scrollSpeed;
     private bool freezeCamera;
 
@@ -14,7 +17,21 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        FollowTarget(GameManager.Instance.player.transform);
+        fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, 1);
+        StartCoroutine(FadeCamera(false, 0.8f));
+        FollowTarget(LevelManager.Instance.player.transform);
+    } 
+
+    public IEnumerator FadeCamera(bool state, float fadeSpeed = 2.5f)
+    {
+        float fadeToo = state ? 1 : 0;
+        while (Mathf.Abs(fade.color.a - fadeToo) > 0.01f)
+        {
+            float alpha = Mathf.Lerp(fade.color.a, fadeToo, fadeSpeed * Time.deltaTime);
+            fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, alpha);
+            yield return null;
+        }
+        fade.color = new Color(fade.color.r, fade.color.g, fade.color.b, fadeToo);
     }
 
     void FixedUpdate()

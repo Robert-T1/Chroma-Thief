@@ -95,7 +95,7 @@ using UnityEngine;
         isAttacking = true;
         animateController.AttackState(true);
         attackDamageBox.SetActive(true);
-        attackDamageBox.transform.localPosition = new Vector2(_frameInput.Move.x < 0 ? attackXPos_Left : attackXPos_Right, attackDamageBox.transform.localPosition.y);
+        attackDamageBox.transform.localPosition = new Vector2(animateController.GetPlayerSpriteFlipState() ? attackXPos_Left : attackXPos_Right, attackDamageBox.transform.localPosition.y);
 
         yield return new WaitForSeconds(animateController.GetAnimationClipLength("attacking") + 0.25f);
 

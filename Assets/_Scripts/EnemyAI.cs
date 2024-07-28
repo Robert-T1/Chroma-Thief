@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private string attackAnimationClipName = "SpiderAttack";
     [SerializeField] private float attackDuration = 0.5f;
+    [SerializeField] private float attackAnimationDistance = 1.5f;
     [SerializeField] private GameObject attackBox;
     [SerializeField] private Vector2 attackBoxLeft, attackBoxRight;
     [SerializeField] private Health health;
@@ -57,7 +58,7 @@ public class EnemyAI : MonoBehaviour
         {
             speed = chaseSpeed;
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            if(Vector2.Distance(transform.position, player.transform.position) < 1 && !isAttacking)
+            if(Vector2.Distance(transform.position, player.transform.position) < attackAnimationDistance && !isAttacking)
             {
                 StartCoroutine(Attack());
             }

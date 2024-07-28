@@ -48,7 +48,24 @@ public class Health : MonoBehaviour
         }
         
     }
+    public void ResetHealth()
+    {
+        this.health = maxHealth;
+        healthBar.value = Mathf.Clamp01((float)health / (float)maxHealth);
+        HealthBarState(true);
+    }
+    public void SetHealth(int health)
+    {
+        this.health = health;
+        healthBar.value = Mathf.Clamp01((float)health / (float)maxHealth);
 
+        if (health <= 0)
+        {
+            onDeath?.Invoke();
+        }
+
+        HealthBarState(true);
+    }
     public void Damage(int damage)
     {
         health -= damage;

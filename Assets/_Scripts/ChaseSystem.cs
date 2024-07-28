@@ -4,6 +4,7 @@ using UnityEngine.InputSystem.XR;
 
 public class ChaseSystem : MonoBehaviour
 {
+    [SerializeField] private Transform resetPoint;
     [SerializeField] private CameraController camController;
     [SerializeField] private StressReceiver stressReceiver;
     [SerializeField] private float chaseSpeed = 3.5f;
@@ -17,7 +18,7 @@ public class ChaseSystem : MonoBehaviour
         {
             return;
         }
-
+        Debug.Log("Here");
         if (camController.transform.position.x <= stopPoint)
         {
             camController.enabled = false;
@@ -42,15 +43,21 @@ public class ChaseSystem : MonoBehaviour
         stressReceiver.InduceStress(1f);
         yield return new WaitForSeconds(3);
         stressReceiver.TraumaExponent = 1f;
-        chaseAnimation.enabled = true;
+        //haseAnimation.enabled = true;
         yield return new WaitForSeconds(2);
 
+        camController.CameraState(false);
         camController.AutoScrollLeft(chaseSpeed);
         camController.SetLocationOffset(new Vector3(-2, 0, -10));
     }
 
     public void ResetChase()
     {
+        camController.CameraState(true);
+        isChasing = false;
+        camController.transform.position = new Vector3(resetPoint.position.x, resetPoint.position.y, -10);
+        LevelManager.Instance.player.transform.position = resetPoint.position;
 
+       StartCoroutine(ChaseSequence());
     }
 }
