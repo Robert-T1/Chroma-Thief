@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 541713227}
   - component: {fileID: 541713226}
   m_Layer: 0
-  m_Name: Door (2)
+  m_Name: Door_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 668364058}
   - component: {fileID: 668364057}
   m_Layer: 0
-  m_Name: Door (1)
+  m_Name: Door_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1276,6 +1276,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
+--- !u!114 &733985510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8037309798821006005, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
+  m_PrefabInstance: {fileID: 733985509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321177272d39d12459eda5e0cf215886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1130891503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,11 +1445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1485,7 +1496,7 @@ GameObject:
   - component: {fileID: 1545348076}
   - component: {fileID: 1545348077}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Door_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1631,7 +1642,7 @@ GameObject:
   - component: {fileID: 2105713992}
   - component: {fileID: 2105713991}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1650,7 +1661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1256739318}
-  camController: {fileID: 0}
+  camController: {fileID: 733985510}
   chaseSystem: {fileID: 0}
 --- !u!4 &2105713992
 Transform:
