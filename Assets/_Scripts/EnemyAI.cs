@@ -78,6 +78,7 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("dead", true);
         StartCoroutine(WaitBeforeDestroy(3));
         health.onDeath -= Death;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemies/Death");
     }
 
     private IEnumerator WaitBeforeDestroy(int seconds)
@@ -91,6 +92,8 @@ public class EnemyAI : MonoBehaviour
         isAttacking = true;
         animator.SetBool("attacking", true);
         attackBox.SetActive(true);
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemies/Attack");
 
         yield return new WaitForSeconds(attackDuration);
 

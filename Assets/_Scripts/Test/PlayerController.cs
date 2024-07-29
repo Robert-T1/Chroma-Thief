@@ -94,6 +94,7 @@ using UnityEngine;
     {
         isAttacking = true;
         animateController.AttackState(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Attack");
         attackDamageBox.SetActive(true);
         attackDamageBox.transform.localPosition = new Vector2(animateController.GetPlayerSpriteFlipState() ? attackXPos_Left : attackXPos_Right, attackDamageBox.transform.localPosition.y);
 
@@ -173,7 +174,8 @@ using UnityEngine;
             _coyoteUsable = false;
             _frameVelocity.y = _stats.JumpPower;
             Jumped?.Invoke();
-        }
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
+    }
 
         #endregion
 

@@ -33,6 +33,13 @@ public class PlayerAnimationController : MonoBehaviour
        return spriteRenderer.flipX;
     }
 
+     void PlayRunEvent (string EventPath)
+    {
+
+        FMODUnity.RuntimeManager.PlayOneShot(EventPath);
+        
+    }
+
 
     public float GetAnimationClipLength(string clipName)
     {
