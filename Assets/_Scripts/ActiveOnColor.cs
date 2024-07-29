@@ -9,16 +9,23 @@ public class ActiveOnColor : ColorSubscriber
 
     private void Start()
     {
+        Debug.Log(gameObject.name);
         if(gameObjectToSet == null)
         {
             gameObjectToSet = this.gameObject;
         }
+
         if (ColorManager.Instance != null)
         {
             ColorManager.Instance.colorChange += OnColorChange;
         }
 
         gameObjectToSet.SetActive(!setActiveOnColor);
+
+        if(ColorManager.Instance.IsColorRestored(activeOnColorType))
+        {
+            gameObjectToSet.SetActive(setActiveOnColor);
+        }
     }
 
     protected override void OnColorChange(ColorType type)
@@ -28,4 +35,9 @@ public class ActiveOnColor : ColorSubscriber
             gameObjectToSet.SetActive(setActiveOnColor);
         }
     }
-}
+
+    private void OnDestroy()
+    {
+        ColorManager.Instance.colorChange -= OnColorChange;
+    }
+} 

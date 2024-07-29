@@ -20,8 +20,29 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetBool("moving", state);
     }
+    public void AttackState(bool state)
+    {
+        animator.SetBool("attacking", state);
+    }
     public void FlipPlayerSprite(bool flip)
     {
         spriteRenderer.flipX = flip;
+    }
+    public bool GetPlayerSpriteFlipState()
+    {
+       return spriteRenderer.flipX;
+    }
+
+
+    public float GetAnimationClipLength(string clipName)
+    {
+        foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
+        {
+            if (clip.name == clipName)
+            {
+                return clip.length;
+            }
+        }
+        return 0f;
     }
 }

@@ -13,7 +13,7 @@ public class Climbable : MonoBehaviour, IInteraction
     {
         isClimbing = !isClimbing;
 
-        player = GameManager.Instance.player;
+        player = LevelManager.Instance.player;
         player.EnablePlayerController(!isClimbing);
 
         Vector2 newPos = new Vector2(transform.position.x, player.transform.position.y);

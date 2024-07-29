@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ColorManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class ColorManager : MonoBehaviour
 
     [SerializeField] private float fadeSpeed = 0.5f;
     [SerializeField] private Material red_Mat, green_Mat, blue_Mat;
+
+    private List<ColorType> restoreColors = new List<ColorType>();
 
     public delegate void OnColorChange(ColorType type);
     public OnColorChange colorChange;
@@ -29,6 +32,11 @@ public class ColorManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public bool IsColorRestored(ColorType color)
+    {
+        return restoreColors.Contains(color);
+    }
+
     public void ToggleColor(ColorType type, float fadeToo)
     {
         switch(type)
@@ -42,6 +50,13 @@ public class ColorManager : MonoBehaviour
             case ColorType.Blue:
                 StartCoroutine(FadeColor(fadeToo, blue_Mat));
                 break;
+        }
+
+        if(fadeToo == 0) {
+            restoreColors.Add(type);
+        } else
+        {
+            restoreColors.Remove(type);
         }
         colorChange?.Invoke(type);
     }
@@ -70,3 +85,4 @@ public class ColorManager : MonoBehaviour
         blue_Mat.SetFloat("_EffectAmount", 1);
     }
 }
+
