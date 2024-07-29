@@ -13,9 +13,35 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private Button mainMenuButton;
 
+    [SerializeField]
+    private Button settingsButton;
+
+    [SerializeField]
+    private Button backButton;
+
+    [SerializeField]
+    private GameObject rootPanel;
+
+    [SerializeField]
+    private GameObject settingsPanel;
+
     void Start()
     {
         resumeButton.onClick.AddListener(() => gui.TogglePauseMenu());
+        settingsButton.onClick.AddListener(() => OpenSettings());
         mainMenuButton.onClick.AddListener(() => SceneManager.LoadScene("MainMenu"));
+        backButton.onClick.AddListener(() => CloseSettings());
+    }
+
+    public void OpenSettings()
+    {
+        settingsPanel.SetActive(true);
+        rootPanel.SetActive(false);
+    }
+
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false);
+        rootPanel.SetActive(true);
     }
 }
