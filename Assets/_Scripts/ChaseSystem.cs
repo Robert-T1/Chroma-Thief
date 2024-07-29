@@ -1,8 +1,7 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 
-public class ChaseSystem : MonoBehaviour
+public class ChaseSystem : MonoBehaviour, IChase
 {
     [SerializeField] private Transform resetPoint;
     [SerializeField] private CameraController camController;
