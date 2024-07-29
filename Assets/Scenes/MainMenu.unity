@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779514513dfd7724f9de6314cda376f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameSceneName: SpiderForest
+  GameSceneName: Hub
   startButton: {fileID: 756862020}
   settingsButton: {fileID: 2070106}
   creditsButton: {fileID: 921793713}
