@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 69adadb1f56d92b49bd397850c4f5fc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2439194089714153445
+    second: IcePlatform_0
+  - first:
+      213: 8680133466900182891
+    second: IcePlatform_1
+  - first:
+      213: 557643379851859668
+    second: IcePlatform_2
+  - first:
+      213: -3804138820972959084
+    second: IcePlatform_3
+  - first:
+      213: -2720715149222046823
+    second: IcePlatform_4
+  - first:
+      213: 2541142503222944460
+    second: IcePlatform_5
+  - first:
+      213: -1975752491658357644
+    second: IcePlatform_6
+  - first:
+      213: -8420097211351752426
+    second: IcePlatform_7
+  - first:
+      213: -4694746691119481435
+    second: IcePlatform_8
+  - first:
+      213: 757557840365677085
+    second: IcePlatform_9
+  - first:
+      213: -3009890030137587900
+    second: IcePlatform_10
+  - first:
+      213: -6592545420467136697
+    second: IcePlatform_11
+  - first:
+      213: -7623629547634975670
+    second: IcePlatform_12
+  - first:
+      213: 5223517133937750043
+    second: IcePlatform_13
+  - first:
+      213: -8076414984313578500
+    second: IcePlatform_14
+  - first:
+      213: 120099130232042579
+    second: IcePlatform_15
+  - first:
+      213: 2446735557321142482
+    second: IcePlatform_16
+  - first:
+      213: -3015885949626372167
+    second: IcePlatform_17
+  - first:
+      213: -2666014210485186293
+    second: IcePlatform_18
+  - first:
+      213: -1658014176271865667
+    second: IcePlatform_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IcePlatform_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 37
+        width: 67
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b180b5816ed362ed0800000000000000
+      internalID: -2439194089714153445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67b0991667067870800000000000000
+      internalID: 8680133466900182891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 53
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d61b6f03b52db700800000000000000
+      internalID: 557643379851859668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 55
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a22a3c5ebf43bc0800000000000000
+      internalID: -3804138820972959084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 55
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993989b9cf31e3ad0800000000000000
+      internalID: -2720715149222046823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 39
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc22044a4a3f34320800000000000000
+      internalID: 2541142503222944460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_6
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 39
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4745c9aa397b494e0800000000000000
+      internalID: -1975752491658357644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 37
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6112f17a23ec52b80800000000000000
+      internalID: -8420097211351752426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 36
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adf16d12c8e8deb0800000000000000
+      internalID: -4694746691119481435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 40
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1aeec397d2638a00800000000000000
+      internalID: 757557840365677085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 42
+        width: 63
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447c8a4f6f8ba36d0800000000000000
+      internalID: -3009890030137587900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 42
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7479d6f6ed29284a0800000000000000
+      internalID: -6592545420467136697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 10
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c9b02715d633690800000000000000
+      internalID: -7623629547634975670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 10
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10b68e6829ad7840800000000000000
+      internalID: 5223517133937750043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 10
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbd859cc5fcaef80800000000000000
+      internalID: -8076414984313578500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_15
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 8
+        width: 59
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354705bc58daaa100800000000000000
+      internalID: 120099130232042579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_16
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2
+        width: 77
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0b179a60d84f120800000000000000
+      internalID: 2446735557321142482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfad6925bb6526d0800000000000000
+      internalID: -3015885949626372167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_18
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0113e1633a600bd0800000000000000
+      internalID: -2666014210485186293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePlatform_19
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 188
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8e0c624ec8df8e0800000000000000
+      internalID: -1658014176271865667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IcePlatform_0: -2439194089714153445
+      IcePlatform_1: 8680133466900182891
+      IcePlatform_10: -3009890030137587900
+      IcePlatform_11: -6592545420467136697
+      IcePlatform_12: -7623629547634975670
+      IcePlatform_13: 5223517133937750043
+      IcePlatform_14: -8076414984313578500
+      IcePlatform_15: 120099130232042579
+      IcePlatform_16: 2446735557321142482
+      IcePlatform_17: -3015885949626372167
+      IcePlatform_18: -2666014210485186293
+      IcePlatform_19: -1658014176271865667
+      IcePlatform_2: 557643379851859668
+      IcePlatform_3: -3804138820972959084
+      IcePlatform_4: -2720715149222046823
+      IcePlatform_5: 2541142503222944460
+      IcePlatform_6: -1975752491658357644
+      IcePlatform_7: -8420097211351752426
+      IcePlatform_8: -4694746691119481435
+      IcePlatform_9: 757557840365677085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

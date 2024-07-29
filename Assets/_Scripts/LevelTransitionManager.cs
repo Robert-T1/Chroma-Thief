@@ -9,8 +9,8 @@ public class LevelTransitionManager : MonoBehaviour
 
     private Dictionary<Scenes, bool> lockedScenes = new Dictionary<Scenes, bool> {
         { Scenes.Forest, false },
-        { Scenes.Cave, true },
-        { Scenes.Volcano, true },
+        { Scenes.Cave, false },
+        { Scenes.Volcano, false },
          { Scenes.Boss, true },
     };
 

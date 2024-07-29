@@ -5,7 +5,7 @@ public class Door : MonoBehaviour, IInteraction
     [SerializeField] private Scenes goToLevel;
     public string GetInteractionName()
     {
-        return "Open Door";
+        return "Open Door " + goToLevel;
     }
 
     public void Interact()

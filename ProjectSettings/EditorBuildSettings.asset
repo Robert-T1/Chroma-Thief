@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpiderForest.unity
     guid: 14dce5af0e9b5e0449d7847cc0e29180
+  - enabled: 1
+    path: Assets/Scenes/FloodedCave.unity
+    guid: e3583bc14f59c2648b65f96e74e1d0e5
+  - enabled: 1
+    path: Assets/Scenes/Volcano.unity
+    guid: 59581de64100f7648beceea7432d117f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 5d7e82245bd8ac8409501299432797e7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
