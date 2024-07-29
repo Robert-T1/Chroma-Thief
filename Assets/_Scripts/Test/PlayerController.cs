@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
-    [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour, IPlayerController
     {
         [SerializeField] private float attackXPos_Left, attackXPos_Right;
@@ -22,6 +23,9 @@ using UnityEngine;
         public Vector2 FrameInput => _frameInput.Move;
         public event Action<bool, float> GroundedChanged;
         public event Action Jumped;
+        public GuiManager gui;
+        public InputSystemActions playerActions;
+        private InputAction pause;
 
         #endregion
 
@@ -33,6 +37,19 @@ using UnityEngine;
             _col = GetComponent<CapsuleCollider2D>();
 
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
+            playerActions = new InputSystemActions();
+        }
+
+        void OnEnable()
+        {
+            pause = playerActions.UI.Pause;
+            pause.Enable();
+            pause.performed += gui.Pause;
+        }
+
+        void OnDisable()
+        {
+            pause.Disable();
         }
 
         private void Update()

@@ -1,16 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class GuiManager : MonoBehaviour
 {
     [SerializeField]
     private PauseMenu pauseMenu;
 
-    void Start()
-    {
-    }
-
-    public void OnPause(InputAction.CallbackContext context)
+    public void Pause(InputAction.CallbackContext context)
     {
         TogglePauseMenu();
     }
