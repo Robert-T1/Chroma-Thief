@@ -1392,10 +1392,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 7789744683797668371, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
+      propertyPath: orthographic size
+      value: 5.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8037309798821006005, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1153232351}
+    - target: {fileID: 8037309798821006005, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
+      propertyPath: smoothSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037309798821006005, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
+      propertyPath: locationOffset.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1964,6 +1976,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 733985509}
+  - {fileID: 3503386994706555959}
   - {fileID: 1222069816}
   - {fileID: 223024656}
   - {fileID: 35572205}
@@ -1972,7 +1985,6 @@ SceneRoots:
   - {fileID: 1545348075}
   - {fileID: 668364060}
   - {fileID: 541713229}
-  - {fileID: 3503386994706555959}
   - {fileID: 39046665}
   - {fileID: 2105713992}
   - {fileID: 53964162}
