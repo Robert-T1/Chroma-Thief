@@ -18,7 +18,6 @@ public class ChaseSystem : MonoBehaviour, IChase
         {
             return;
         }
-        Debug.Log("Here");
         if (camController.transform.position.x <= stopPoint)
         {
             camController.enabled = false;

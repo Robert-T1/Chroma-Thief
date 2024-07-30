@@ -18,7 +18,7 @@ public class ColorItem : MonoBehaviour, IInteraction
     public void Interact()
     {
         LevelManager.Instance.ColorCollected();
-        ColorManager.Instance.ToggleColor(type, 0);
+        ColorManager.Instance.ToggleColor(type, 1);
         chaseSystem.StartChase();
         Destroy(gameObject);
     }
