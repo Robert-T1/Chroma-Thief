@@ -31,6 +31,7 @@ public class PauseMenu : MonoBehaviour
         settingsButton.onClick.AddListener(() => OpenSettings());
         mainMenuButton.onClick.AddListener(() => SceneManager.LoadScene("MainMenu"));
         backButton.onClick.AddListener(() => CloseSettings());
+        gameObject.SetActive(false);
     }
 
     public void OpenSettings()
