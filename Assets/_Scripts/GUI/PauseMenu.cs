@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -25,6 +26,14 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private GameObject settingsPanel;
 
+    [SerializeField]
+    private Slider volumeSlider;
+
+    [SerializeField]
+    private Toggle enableShadowsToggle;
+
+    public AudioManager audio;
+
     void Start()
     {
         resumeButton.onClick.AddListener(() => gui.TogglePauseMenu());
@@ -32,6 +41,19 @@ public class PauseMenu : MonoBehaviour
         mainMenuButton.onClick.AddListener(() => SceneManager.LoadScene("MainMenu"));
         backButton.onClick.AddListener(() => CloseSettings());
         gameObject.SetActive(false);
+        volumeSlider.onValueChanged.AddListener((value) => ChangeVolume(value));
+        enableShadowsToggle.onValueChanged.AddListener((value) => {
+            var lights = FindObjectsByType<Light2D>(FindObjectsSortMode.None);
+            foreach(var light in lights)
+            {
+                light.shadowsEnabled = value;
+            }
+        });
+    }
+
+    void ChangeVolume(float value)
+    {
+        
     }
 
     public void OpenSettings()

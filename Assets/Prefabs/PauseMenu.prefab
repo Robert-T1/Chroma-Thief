@@ -1028,6 +1028,9 @@ MonoBehaviour:
   backButton: {fileID: 7570743556876933970}
   rootPanel: {fileID: 479356673185226540}
   settingsPanel: {fileID: 304525265338934619}
+  volumeSlider: {fileID: 5264866255066474869}
+  enableShadowsToggle: {fileID: 7417039861700883509}
+  audio: {fileID: 0}
 --- !u!1 &5736799318170718812
 GameObject:
   m_ObjectHideFlags: 0
