@@ -381,7 +381,7 @@ MonoBehaviour:
   fadeSpeed: 1.5
   red_Mat: {fileID: 2100000, guid: 0a8896aaa5bb6c840888d4d0b5e6e025, type: 2}
   green_Mat: {fileID: 2100000, guid: 54ab0f4ffefbc8644b254340734cec9b, type: 2}
-  blue_Mat: {fileID: 2100000, guid: c5ce1beec7c34954998e8935df0e51c8, type: 2}
+  blue_Mat: {fileID: 2100000, guid: f07f48e521434a0488e3c6ed1023cd78, type: 2}
 --- !u!4 &39046665
 Transform:
   m_ObjectHideFlags: 0
@@ -1578,15 +1578,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 1963848098823993234, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: gui
@@ -1974,6 +1974,7 @@ SceneRoots:
   - {fileID: 733985509}
   - {fileID: 3503386994706555959}
   - {fileID: 1222069816}
+  - {fileID: 39046665}
   - {fileID: 223024656}
   - {fileID: 35572205}
   - {fileID: 645379302}
@@ -1981,6 +1982,5 @@ SceneRoots:
   - {fileID: 1545348075}
   - {fileID: 668364060}
   - {fileID: 541713229}
-  - {fileID: 39046665}
   - {fileID: 2105713992}
   - {fileID: 53964162}
