@@ -87,6 +87,7 @@ using UnityEngine.InputSystem;
             {
                 _jumpToConsume = true;
                 _timeJumpWasPressed = _time;
+                animateController.JumpTrigger();
             }
 
             if(_frameInput.Move.x != 0) 
@@ -122,15 +123,17 @@ using UnityEngine.InputSystem;
     private IEnumerator HandleAttack()
     {
         isAttacking = true;
-        animateController.AttackState(true);
+
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Attack");
+        animateController.AttackTrigger();
+
         attackDamageBox.SetActive(true);
         attackDamageBox.transform.localPosition = new Vector2(animateController.GetPlayerSpriteFlipState() ? attackXPos_Left : attackXPos_Right, attackDamageBox.transform.localPosition.y);
 
-        yield return new WaitForSeconds(animateController.GetAnimationClipLength("attacking") + 0.25f);
+        yield return new WaitForSeconds(animateController.GetAnimationClipLength("attacking") + 0.1f);
 
         attackDamageBox.SetActive(false);
-        animateController.AttackState(false);
+        animateController.AttackTrigger();
         isAttacking = false;
     }
 
@@ -232,13 +235,16 @@ using UnityEngine.InputSystem;
             if (_grounded && _frameVelocity.y <= 0f)
             {
                 _frameVelocity.y = _stats.GroundingForce;
+                animateController.GroundedState(true);
             }
             else
             {
                 var inAirGravity = _stats.FallAcceleration;
                 if (_endedJumpEarly && _frameVelocity.y > 0) inAirGravity *= _stats.JumpEndEarlyGravityModifier;
                 _frameVelocity.y = Mathf.MoveTowards(_frameVelocity.y, -_stats.MaxFallSpeed, inAirGravity * Time.fixedDeltaTime);
+                animateController.GroundedState(false);
             }
+
         }
 
         public void ResetVelocity()
@@ -278,3 +284,4 @@ using UnityEngine.InputSystem;
         public event Action Jumped;
         public Vector2 FrameInput { get; }
     }
+

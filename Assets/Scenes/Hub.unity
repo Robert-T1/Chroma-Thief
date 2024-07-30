@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73469b0bc1aeb774ebde2f2bb52b48a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 1.5
+  fadeSpeed: 0.1
   red_Mat: {fileID: 2100000, guid: 0a8896aaa5bb6c840888d4d0b5e6e025, type: 2}
   green_Mat: {fileID: 2100000, guid: 54ab0f4ffefbc8644b254340734cec9b, type: 2}
   blue_Mat: {fileID: 2100000, guid: f07f48e521434a0488e3c6ed1023cd78, type: 2}
@@ -1687,15 +1687,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1938214982120970394, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1963848098823993234, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
       propertyPath: gui

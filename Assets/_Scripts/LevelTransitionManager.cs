@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class LevelTransitionManager : MonoBehaviour
 {
     public static LevelTransitionManager Instance { get; private set; }
-    private Scenes loadedScene;
+    [SerializeField] private Scenes loadedScene;
 
     private Dictionary<Scenes, bool> lockedScenes = new Dictionary<Scenes, bool> {
         { Scenes.Forest, false },

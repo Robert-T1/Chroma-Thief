@@ -36,7 +36,6 @@ public class LavaSystem : MonoBehaviour, IChase
 
     private IEnumerator ChaseSequence()
     {
-        stressReceiver.TraumaExponent = 0;
         stressReceiver.InduceStress(10f);
         yield return new WaitForSeconds(3);
 
