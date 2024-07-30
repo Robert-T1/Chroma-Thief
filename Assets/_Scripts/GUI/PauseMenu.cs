@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -34,6 +35,12 @@ public class PauseMenu : MonoBehaviour
 
     public AudioManager audio;
 
+    void Awake()
+    {
+        if (PlayerPrefs.HasKey("settings.graphics.shadows"))
+            enableShadowsToggle.isOn = PlayerPrefs.GetInt("settings.graphics.shadows") == 1;
+    }
+
     void Start()
     {
         resumeButton.onClick.AddListener(() => gui.TogglePauseMenu());
@@ -47,13 +54,15 @@ public class PauseMenu : MonoBehaviour
             foreach(var light in lights)
             {
                 light.shadowsEnabled = value;
+                PlayerPrefs.SetInt("settings.graphics.shadows", value? 1 : 0);
             }
         });
     }
 
     void ChangeVolume(float value)
     {
-        
+        // Support for audio buses
+        PlayerPrefs.SetFloat("settings.audio.master.volume", value);
     }
 
     public void OpenSettings()
