@@ -55,6 +55,7 @@ public class PauseMenu : MonoBehaviour
             {
                 light.shadowsEnabled = value;
                 PlayerPrefs.SetInt("settings.graphics.shadows", value? 1 : 0);
+                PlayerPrefs.Save();
             }
         });
     }
@@ -63,6 +64,7 @@ public class PauseMenu : MonoBehaviour
     {
         // Support for audio buses
         PlayerPrefs.SetFloat("settings.audio.master.volume", value);
+        PlayerPrefs.Save();
     }
 
     public void OpenSettings()
