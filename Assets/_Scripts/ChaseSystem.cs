@@ -8,6 +8,7 @@ public class ChaseSystem : MonoBehaviour, IChase
     [SerializeField] private StressReceiver stressReceiver;
     [SerializeField] private float chaseSpeed = 3.5f;
     [SerializeField] private Animator chaseAnimation;
+    [SerializeField] private GameObject deathZoneFallBehind;
     [SerializeField] private float  stopPoint = 0;
     private bool isChasing;
 
@@ -37,6 +38,7 @@ public class ChaseSystem : MonoBehaviour, IChase
 
     private IEnumerator ChaseSequence()
     {
+        deathZoneFallBehind.SetActive(true);
         yield return new WaitForSeconds(1);
         stressReceiver.TraumaExponent = 0f;
         stressReceiver.InduceStress(1f);
@@ -47,11 +49,12 @@ public class ChaseSystem : MonoBehaviour, IChase
 
         camController.CameraState(false);
         camController.AutoScrollLeft(chaseSpeed);
-        camController.SetLocationOffset(new Vector3(-2, 0, -10));
+        camController.SetLocationOffset(new Vector3(-2, -1, -10));
     }
 
     public void ResetChase()
     {
+        deathZoneFallBehind.SetActive(false);
         camController.CameraState(true);
         isChasing = false;
         camController.transform.position = new Vector3(resetPoint.position.x, resetPoint.position.y, -10);

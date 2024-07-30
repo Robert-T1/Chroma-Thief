@@ -186,10 +186,10 @@ TextureImporter:
       name: IcePlatform_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 37
-        width: 67
-        height: 26
+        x: 0
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: IcePlatform_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 54
-        width: 7
-        height: 7
+        x: 64
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: IcePlatform_2
       rect:
         serializedVersion: 2
-        x: 77
-        y: 53
-        width: 11
-        height: 11
+        x: 128
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: IcePlatform_3
       rect:
         serializedVersion: 2
-        x: 88
-        y: 55
-        width: 28
-        height: 9
+        x: 192
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: IcePlatform_4
       rect:
         serializedVersion: 2
-        x: 118
-        y: 55
-        width: 8
-        height: 7
+        x: 256
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +296,10 @@ TextureImporter:
       name: IcePlatform_5
       rect:
         serializedVersion: 2
-        x: 124
-        y: 39
-        width: 69
-        height: 20
+        x: 0
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: IcePlatform_6
       rect:
         serializedVersion: 2
-        x: 58
-        y: 39
-        width: 17
-        height: 9
+        x: 64
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +340,10 @@ TextureImporter:
       name: IcePlatform_7
       rect:
         serializedVersion: 2
-        x: 78
-        y: 37
-        width: 20
-        height: 9
+        x: 128
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: IcePlatform_8
       rect:
         serializedVersion: 2
-        x: 103
-        y: 36
-        width: 13
-        height: 11
+        x: 192
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,10 +384,10 @@ TextureImporter:
       name: IcePlatform_9
       rect:
         serializedVersion: 2
-        x: 120
-        y: 40
-        width: 8
-        height: 6
+        x: 256
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,10 +406,10 @@ TextureImporter:
       name: IcePlatform_10
       rect:
         serializedVersion: 2
-        x: 193
-        y: 42
-        width: 63
-        height: 12
+        x: 320
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: IcePlatform_11
       rect:
         serializedVersion: 2
-        x: 259
-        y: 42
-        width: 59
-        height: 10
+        x: 384
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,10 +450,10 @@ TextureImporter:
       name: IcePlatform_12
       rect:
         serializedVersion: 2
-        x: 3
-        y: 10
-        width: 59
-        height: 10
+        x: 448
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +472,10 @@ TextureImporter:
       name: IcePlatform_13
       rect:
         serializedVersion: 2
-        x: 67
-        y: 10
-        width: 59
-        height: 10
+        x: 512
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,143 +490,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: IcePlatform_14
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 10
-        width: 59
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfbd859cc5fcaef80800000000000000
-      internalID: -8076414984313578500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcePlatform_15
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 8
-        width: 59
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 354705bc58daaa100800000000000000
-      internalID: 120099130232042579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcePlatform_16
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 2
-        width: 77
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d0b179a60d84f120800000000000000
-      internalID: 2446735557321142482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcePlatform_17
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 2
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9bfad6925bb6526d0800000000000000
-      internalID: -3015885949626372167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcePlatform_18
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 1
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b0113e1633a600bd0800000000000000
-      internalID: -2666014210485186293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcePlatform_19
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 0
-        width: 188
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db8e0c624ec8df8e0800000000000000
-      internalID: -1658014176271865667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b8b783348e88d5b4ea27ee2ce880dacc
     internalID: 0
     vertices: []
     indices: 
@@ -642,12 +510,6 @@ TextureImporter:
       IcePlatform_11: -6592545420467136697
       IcePlatform_12: -7623629547634975670
       IcePlatform_13: 5223517133937750043
-      IcePlatform_14: -8076414984313578500
-      IcePlatform_15: 120099130232042579
-      IcePlatform_16: 2446735557321142482
-      IcePlatform_17: -3015885949626372167
-      IcePlatform_18: -2666014210485186293
-      IcePlatform_19: -1658014176271865667
       IcePlatform_2: 557643379851859668
       IcePlatform_3: -3804138820972959084
       IcePlatform_4: -2720715149222046823
