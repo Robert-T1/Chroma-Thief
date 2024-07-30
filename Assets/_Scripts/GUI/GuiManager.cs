@@ -7,6 +7,8 @@ public class GuiManager : MonoBehaviour
     [SerializeField]
     private PauseMenu pauseMenu;
 
+    public PlayerController player;
+
     public void Pause(InputAction.CallbackContext context)
     {
         TogglePauseMenu();

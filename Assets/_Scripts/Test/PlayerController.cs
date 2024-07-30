@@ -31,6 +31,9 @@ using UnityEngine.InputSystem;
 
         private float _time;
 
+        [SerializeField]
+        bool isPaused = false;
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
@@ -44,7 +47,10 @@ using UnityEngine.InputSystem;
         {
             pause = playerActions.UI.Pause;
             pause.Enable();
-            pause.performed += gui.Pause;
+            pause.performed += (context) => {
+                isPaused = !isPaused;
+                gui.TogglePauseMenu();
+            };
         }
 
         void OnDisable()
@@ -54,8 +60,11 @@ using UnityEngine.InputSystem;
 
         private void Update()
         {
-            _time += Time.deltaTime;
-            GatherInput();
+            if (!isPaused)
+            {
+                _time += Time.deltaTime;
+                GatherInput();
+            }
         }
 
         private void GatherInput()
@@ -98,19 +107,23 @@ using UnityEngine.InputSystem;
 
         private void FixedUpdate()
         {
-            CheckCollisions();
+            if (!isPaused)
+            {
+                CheckCollisions();
 
-            HandleJump();
-            HandleDirection();
-            HandleGravity();
+                HandleJump();
+                HandleDirection();
+                HandleGravity();
 
-            ApplyMovement();
+                ApplyMovement();
+            }
         }
 
     private IEnumerator HandleAttack()
     {
         isAttacking = true;
         animateController.AttackState(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Attack");
         attackDamageBox.SetActive(true);
         attackDamageBox.transform.localPosition = new Vector2(animateController.GetPlayerSpriteFlipState() ? attackXPos_Left : attackXPos_Right, attackDamageBox.transform.localPosition.y);
 
@@ -190,7 +203,8 @@ using UnityEngine.InputSystem;
             _coyoteUsable = false;
             _frameVelocity.y = _stats.JumpPower;
             Jumped?.Invoke();
-        }
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jump");
+    }
 
         #endregion
 
