@@ -458,7 +458,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5ce1beec7c34954998e8935df0e51c8, type: 2}
+  - {fileID: 2100000, guid: f07f48e521434a0488e3c6ed1023cd78, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -581,6 +581,7 @@ MonoBehaviour:
   attackDamageBox: {fileID: 6912969016687356245}
   animateController: {fileID: 5983472773680966492}
   _stats: {fileID: 11400000, guid: dd6ccfe243a7abe42afbd4a338a21245, type: 2}
+  gui: {fileID: 0}
 --- !u!114 &6120273903276778345
 MonoBehaviour:
   m_ObjectHideFlags: 0

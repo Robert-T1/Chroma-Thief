@@ -20,21 +20,21 @@ Shader"Sprites/GrayScale"
         }
 
 Cull Off
-
 Lighting Off
-
 ZWrite Off
-        Fog {
-Mode Off}
+Fog { Mode Off}
 Blend SrcAlpha OneMinusSrcAlpha
 
-        Pass
+     
+ 
+    Pass
         {
         HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             #pragma multi_compile _ PIXELSNAP_ON
-#include "UnityCG.cginc"
+            #include "UnityCG.cginc"
+            
 
 struct appdata_t
 {

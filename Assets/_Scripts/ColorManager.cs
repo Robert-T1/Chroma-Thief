@@ -52,7 +52,7 @@ public class ColorManager : MonoBehaviour
                 break;
         }
 
-        if(fadeToo == 0) {
+        if(fadeToo == 1) {
             restoreColors.Add(type);
         } else
         {
@@ -80,9 +80,9 @@ public class ColorManager : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        red_Mat.SetFloat("_EffectAmount", 1);
-        green_Mat.SetFloat("_EffectAmount", 1);
-        blue_Mat.SetFloat("_EffectAmount", 1);
+        red_Mat.SetFloat("_EffectAmount", 0);
+        green_Mat.SetFloat("_EffectAmount", 0);
+        blue_Mat.SetFloat("_EffectAmount", 0);
     }
 }
 
