@@ -1404,10 +1404,6 @@ PrefabInstance:
       propertyPath: smoothSpeed
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8037309798821006005, guid: 417bf966d935fad409c452542ef8a50f, type: 3}
-      propertyPath: locationOffset.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
