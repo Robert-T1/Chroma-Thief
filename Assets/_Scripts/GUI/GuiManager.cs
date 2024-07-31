@@ -9,6 +9,12 @@ public class GuiManager : MonoBehaviour
 
     public PlayerController player;
 
+    void onAwake()
+    {
+        // Pause should start closed
+        pauseMenu.gameObject.SetActive(false);
+    }
+
     public void Pause(InputAction.CallbackContext context)
     {
         TogglePauseMenu();
@@ -20,10 +26,12 @@ public class GuiManager : MonoBehaviour
         if(gameObject.activeSelf)
         {
             gameObject.SetActive(false);
+            player.isPaused = false;   
         }
         else
         {
             gameObject.SetActive(true);
+            player.isPaused = true;
         }
     }
 }

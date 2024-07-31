@@ -31,8 +31,7 @@ using UnityEngine.InputSystem;
 
         private float _time;
 
-        [SerializeField]
-        bool isPaused = false;
+        public bool isPaused = false;
 
         private void Awake()
         {

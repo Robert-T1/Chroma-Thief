@@ -127,6 +127,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 528211087}
     m_Modifications:
     - target: {fileID: 1723269693169166259, guid: f77492170af340341947c6b04e5b501e, type: 3}
+      propertyPath: gui
+      value: 
+      objectReference: {fileID: 528211088}
+    - target: {fileID: 1723269693169166259, guid: f77492170af340341947c6b04e5b501e, type: 3}
       propertyPath: volumeSlider
       value: 
       objectReference: {fileID: 6070861}
@@ -1261,13 +1265,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528211086}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e593d1f5793fa6c439c97f5ce5467be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1530039362}
-  player: {fileID: 0}
+  player: {fileID: 1256739320}
 --- !u!1 &541713225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,6 +3352,17 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1256739320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1963848098823993234, guid: 7c46f13f91d21164f8d59762d2ca4e3f, type: 3}
+  m_PrefabInstance: {fileID: 1222069816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59197792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9a7ccaf4d171348a85906cf63d8804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264356185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,6 +5417,7 @@ MonoBehaviour:
   player: {fileID: 1256739318}
   camController: {fileID: 733985510}
   chaseSystemObject: {fileID: 0}
+  trigger: {fileID: 0}
 --- !u!4 &2105713992
 Transform:
   m_ObjectHideFlags: 0

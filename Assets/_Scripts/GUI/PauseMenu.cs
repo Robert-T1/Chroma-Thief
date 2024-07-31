@@ -43,6 +43,7 @@ public class PauseMenu : MonoBehaviour
     {
         enableShadowsToggle.isOn = PlayerPrefs.GetInt("settings.graphics.shadows", 1) == 1;
         audioBus = RuntimeManager.GetBus($"bus:/");
+        volumeSlider.value = PlayerPrefs.GetFloat("settings.audio.master.volume", 100.0f);
     }
 
     void Start()
@@ -51,7 +52,6 @@ public class PauseMenu : MonoBehaviour
         settingsButton.onClick.AddListener(() => OpenSettings());
         mainMenuButton.onClick.AddListener(() => SceneManager.LoadScene("MainMenu"));
         backButton.onClick.AddListener(() => CloseSettings());
-        gameObject.SetActive(false);
         volumeSlider.onValueChanged.AddListener((value) => ChangeVolume(value));
         enableShadowsToggle.onValueChanged.AddListener((value) => ToggleShadows(value));
     }

@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
         CreateSingleton();
 
         var bus = RuntimeManager.GetBus($"bus:/");
-        bus.setVolume(PlayerPrefs.GetFloat("settings.audio.master.volume", 100.0f * 0.6f));
+        bus.setVolume(PlayerPrefs.GetFloat("settings.audio.master.volume", 100.0f) * 0.6f);
         ToggleShadows(PlayerPrefs.GetInt("settings.graphics.shadows", 1) == 1);
     }
 
