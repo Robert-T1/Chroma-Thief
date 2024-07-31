@@ -70,7 +70,7 @@ public class Health : MonoBehaviour
     {
         health -= damage;
         healthBar.value = Mathf.Clamp01((float)health / (float)maxHealth);
-
+        
         if(health <= 0)
         {
             onDeath?.Invoke();

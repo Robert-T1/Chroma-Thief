@@ -26,7 +26,7 @@ public class LevelTransitionManager : MonoBehaviour
         }
         else
         {
-            Destroy(Instance);
+            Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
     }
