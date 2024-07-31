@@ -10,9 +10,6 @@ public class GameManager : MonoBehaviour
         RuntimeManager.LoadBank("Master Bank", true);
         RuntimeManager.LoadBank("Master Bank.strings", true);
 
-        RuntimeManager.LoadBank("sfx Bank", true);
-        RuntimeManager.LoadBank("sfx Bank.strings", true);
-
         RuntimeManager.WaitForAllSampleLoading();
     }
 
