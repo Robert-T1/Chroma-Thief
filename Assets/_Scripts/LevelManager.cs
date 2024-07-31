@@ -5,12 +5,17 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance { get; private set; }
     public Player player;
     public CameraController camController;
-    public ChaseSystem chaseSystem;
+    public GameObject chaseSystemObject;
+    public IChase chaseSystem;
 
     private bool colorCollected = false;
 
     private void Awake()
     {
+        if(chaseSystemObject != null)
+        {
+            chaseSystem = chaseSystemObject.GetComponent<IChase>();
+        }
         CreateSingleton();
     }
 
@@ -22,7 +27,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            Destroy(Instance);
+            Destroy(gameObject);
         }
     }
 

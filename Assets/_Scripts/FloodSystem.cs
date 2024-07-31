@@ -11,6 +11,7 @@ public class FloodSystem : MonoBehaviour, IChase
     [SerializeField] private GameObject floodObject;
     [SerializeField] private Vector2 stopPoint;
     private bool isChasing;
+    private Coroutine flood;
 
     private void Update()
     {
@@ -40,7 +41,7 @@ public class FloodSystem : MonoBehaviour, IChase
         stressReceiver.InduceStress(2f);
         yield return new WaitForSeconds(3);
 
-        StartCoroutine(StartFlood());
+        flood = StartCoroutine(StartFlood());
     }
 
     public void ResetChase()
@@ -48,13 +49,16 @@ public class FloodSystem : MonoBehaviour, IChase
         isChasing = false;
         camController.transform.position = new Vector3(resetPoint.position.x, resetPoint.position.y, -10);
         LevelManager.Instance.player.transform.position = resetPoint.position;
+        StopCoroutine(flood);
+        floodObject.transform.position = orginPos;
 
-        StartCoroutine(ChaseSequence());
+        StartChase();
     }
 
+    Vector3 orginPos;
     private IEnumerator StartFlood()
     {
-        Vector3 orginPos = floodObject.transform.position;
+        orginPos = floodObject.transform.position;
         while (isChasing) 
         {
             float newY = Mathf.Lerp(floodObject.transform.position.y, 100, floodSpeedSpeed * Time.deltaTime);

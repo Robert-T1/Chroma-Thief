@@ -11,7 +11,11 @@ public class PlayerAnimationController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
-    
+
+    public void GroundedState(bool state)
+    {
+        animator.SetBool("grounded", state);
+    }
     public void AttackingState(bool state)
     {
         animator.SetBool("attacking", state);
@@ -20,12 +24,27 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetBool("moving", state);
     }
-    public void AttackState(bool state)
+    public void ClimbingState(bool state)
     {
-        animator.SetBool("attacking", state);
+        animator.SetBool("climb", state);
+    }
+    public void AttackTrigger()
+    {
+        animator.SetTrigger("attack");
+    }
+    public void JumpTrigger()
+    {
+        animator.SetTrigger("jump");
     }
     public void FlipPlayerSprite(bool flip)
     {
+        foreach (Transform item in spriteRenderer.transform)
+        {
+            if(item.TryGetComponent<SpriteRenderer>(out SpriteRenderer rend))
+            {
+                rend.flipX = flip;
+            }
+        }
         spriteRenderer.flipX = flip;
     }
     public bool GetPlayerSpriteFlipState()

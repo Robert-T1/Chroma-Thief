@@ -52,7 +52,7 @@ public class FallingPlatform : MonoBehaviour
             yield return null;
         }
 
-      
+        yield return new WaitForSeconds(2);
 
         StartCoroutine(Recover());
     }

@@ -27,7 +27,7 @@ public class ColorManager : MonoBehaviour
         }
         else
         {
-            Destroy(Instance);
+            Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
     }
