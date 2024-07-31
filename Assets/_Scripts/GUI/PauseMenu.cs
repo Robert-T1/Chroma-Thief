@@ -50,7 +50,11 @@ public class PauseMenu : MonoBehaviour
     {
         resumeButton.onClick.AddListener(() => gui.TogglePauseMenu());
         settingsButton.onClick.AddListener(() => OpenSettings());
-        mainMenuButton.onClick.AddListener(() => SceneManager.LoadScene("MainMenu"));
+        mainMenuButton.onClick.AddListener(() => 
+        {
+            ColorManager.Instance.ResetColorManager();
+            SceneManager.LoadScene("MainMenu");
+        });
         backButton.onClick.AddListener(() => CloseSettings());
         volumeSlider.onValueChanged.AddListener((value) => ChangeVolume(value));
         enableShadowsToggle.onValueChanged.AddListener((value) => ToggleShadows(value));
