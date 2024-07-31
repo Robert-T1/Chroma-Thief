@@ -70,8 +70,22 @@ public class Health : MonoBehaviour
     {
         health -= damage;
         healthBar.value = Mathf.Clamp01((float)health / (float)maxHealth);
-        
-        if(health <= 0)
+
+        if (gameObject.CompareTag("Player"))
+        {
+
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Hurt");
+
+        }
+        else
+
+        {
+
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemies/Hurt");
+
+        }
+
+        if (health <= 0)
         {
             onDeath?.Invoke();
         }
