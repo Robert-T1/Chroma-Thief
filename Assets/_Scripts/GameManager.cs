@@ -1,5 +1,4 @@
 using FMODUnity;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,11 +16,11 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            ColorManager.Instance.ResetColorManager();
-            SceneManager.LoadScene(0);
-        }
+        // if(Input.GetKeyDown(KeyCode.Escape))
+        // {
+        //     ColorManager.Instance.ResetColorManager();
+        //     SceneManager.LoadScene(0);
+        // }
     }
 
     private void CreateSingleton()
