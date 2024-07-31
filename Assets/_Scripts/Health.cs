@@ -81,7 +81,7 @@ public class Health : MonoBehaviour
 
         {
 
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Hurt");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemies/Hurt");
 
         }
 
