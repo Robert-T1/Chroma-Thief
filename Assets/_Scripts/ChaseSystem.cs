@@ -20,11 +20,11 @@ public class ChaseSystem : MonoBehaviour, IChase
         }
         if (camController.transform.position.x <= stopPoint)
         {
-            camController.enabled = false;
+            camController.CameraState(true);
         }
         else
         {
-            camController.enabled = true;
+            camController.CameraState(false);
         }
     }
 
@@ -53,12 +53,12 @@ public class ChaseSystem : MonoBehaviour, IChase
 
     public void ResetChase()
     {
+        isChasing = false;
         deathZoneFallBehind.SetActive(false);
         camController.CameraState(true);
-        isChasing = false;
         camController.transform.position = new Vector3(resetPoint.position.x, resetPoint.position.y, -10);
         LevelManager.Instance.player.transform.position = resetPoint.position;
 
-       StartCoroutine(ChaseSequence());
+        StartChase();
     }
 }

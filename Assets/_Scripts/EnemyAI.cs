@@ -75,7 +75,7 @@ public class EnemyAI : MonoBehaviour
     private void Death()
     {
         isMoving = false;
-        animator.SetBool("dead", true);
+        animator.SetTrigger("dead");
         StartCoroutine(WaitBeforeDestroy(3));
         health.onDeath -= Death;
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemies/Death");

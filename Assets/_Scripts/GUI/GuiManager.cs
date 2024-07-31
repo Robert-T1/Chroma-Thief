@@ -20,10 +20,12 @@ public class GuiManager : MonoBehaviour
         if(gameObject.activeSelf)
         {
             gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
         else
         {
             gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
