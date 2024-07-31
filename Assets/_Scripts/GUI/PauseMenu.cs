@@ -1,4 +1,6 @@
 using System;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -33,12 +35,14 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private Toggle enableShadowsToggle;
 
-    public AudioManager audio;
+    public StudioGlobalParameterTrigger trigger;
+
+    Bus audioBus;
 
     void Awake()
     {
-        if (PlayerPrefs.HasKey("settings.graphics.shadows"))
-            enableShadowsToggle.isOn = PlayerPrefs.GetInt("settings.graphics.shadows") == 1;
+        enableShadowsToggle.isOn = PlayerPrefs.GetInt("settings.graphics.shadows", 1) == 1;
+        audioBus = RuntimeManager.GetBus($"bus:/");
     }
 
     void Start()
@@ -49,19 +53,12 @@ public class PauseMenu : MonoBehaviour
         backButton.onClick.AddListener(() => CloseSettings());
         gameObject.SetActive(false);
         volumeSlider.onValueChanged.AddListener((value) => ChangeVolume(value));
-        enableShadowsToggle.onValueChanged.AddListener((value) => {
-            var lights = FindObjectsByType<Light2D>(FindObjectsSortMode.None);
-            foreach(var light in lights)
-            {
-                light.shadowsEnabled = value;
-                PlayerPrefs.SetInt("settings.graphics.shadows", value? 1 : 0);
-                PlayerPrefs.Save();
-            }
-        });
+        enableShadowsToggle.onValueChanged.AddListener((value) => ToggleShadows(value));
     }
 
     void ChangeVolume(float value)
     {
+        audioBus.setVolume(value * 0.6f);
         // Support for audio buses
         PlayerPrefs.SetFloat("settings.audio.master.volume", value);
         PlayerPrefs.Save();
@@ -77,5 +74,16 @@ public class PauseMenu : MonoBehaviour
     {
         settingsPanel.SetActive(false);
         rootPanel.SetActive(true);
+    }
+
+    public void ToggleShadows(bool value)
+    {
+        var lights = FindObjectsByType<Light2D>(FindObjectsSortMode.None);
+        foreach(var light in lights)
+        {
+            light.shadowsEnabled = value;
+            PlayerPrefs.SetInt("settings.graphics.shadows", value? 1 : 0);
+            PlayerPrefs.Save();
+        }
     }
 }
