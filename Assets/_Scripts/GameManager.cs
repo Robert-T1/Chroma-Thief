@@ -1,5 +1,7 @@
 using FMODUnity;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,15 @@ public class GameManager : MonoBehaviour
         RuntimeManager.LoadBank("Master Bank.strings", true);
 
         RuntimeManager.WaitForAllSampleLoading();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ColorManager.Instance.ResetColorManager();
+            SceneManager.LoadScene(0);
+        }
     }
 
     private void CreateSingleton()

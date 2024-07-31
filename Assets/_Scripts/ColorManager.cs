@@ -84,5 +84,14 @@ public class ColorManager : MonoBehaviour
         green_Mat.SetFloat("_EffectAmount", 0);
         blue_Mat.SetFloat("_EffectAmount", 0);
     }
+
+    public void ResetColorManager()
+    {
+        red_Mat.SetFloat("_EffectAmount", 0);
+        green_Mat.SetFloat("_EffectAmount", 0);
+        blue_Mat.SetFloat("_EffectAmount", 0);
+
+        Destroy(gameObject);
+    }
 }
 
